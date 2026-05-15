@@ -7,7 +7,7 @@ export default function RestaurantExamples() {
   const restaurants = [
     {
       name: "Le Bistrot Gourmand",
-      url: "https://www.lebistrotgourmand-cotonou.com",
+      url: "https://www.lecabanondakar.org",
       description: "Menu digital, réservation en ligne, et photos qui donnent faim",
       features: ["Réservation 24/7", "Menu avec photos", "Avis Google", "WhatsApp intégré"],
       icon: "🍽️",
@@ -15,7 +15,7 @@ export default function RestaurantExamples() {
     },
     {
       name: "Saveurs d'Afrique",
-      url: "https://www.saveursdafrique-benin.com",
+      url: "https://www.resto-plusci.com/",
       description: "Site complet avec tous les plats, prix et disponibilités en temps réel",
       features: ["Carte interactive", "Commandes en ligne", "Google Maps", "Fidélité clients"],
       icon: "🥘",
@@ -23,7 +23,7 @@ export default function RestaurantExamples() {
     },
     {
       name: "La Terrasse du Port",
-      url: "https://www.laterrasseduport.com",
+      url: "https://bantourestaurant.com/",
       description: "Design moderne qui reflète l'ambiance unique du restaurant",
       features: ["Design premium", "Réservation en 3 clics", "Photos pro", "Événements privés"],
       icon: "🦞",
@@ -31,7 +31,7 @@ export default function RestaurantExamples() {
     },
     {
       name: "Chez Mama Bénin",
-      url: "https://www.chezmama-benin.com",
+      url: "https://chezchiro.com",
       description: "Site chaleureux avec présentation des spécialités, horaires et galerie",
       features: ["Spécialités du jour", "Horaires visibles", "Galerie photos", "Contact facile"],
       icon: "🍛",
