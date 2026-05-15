@@ -98,7 +98,7 @@ export default function Footer() {
 
               {/* Facebook */}
               <a
-                href="https://facebook.com/"
+                href="https://web.facebook.com/Patawala"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-12 h-12 bg-blue-600 hover:bg-blue-700 rounded-full flex items-center justify-center transition-all hover:scale-110 shadow-lg"
@@ -115,7 +115,7 @@ export default function Footer() {
 
               {/* Instagram */}
               <a
-                href="https://instagram.com/"
+                href="https://www.instagram.com/patawalaabdoulaye1900/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-12 h-12 bg-gradient-to-br from-purple-500 via-pink-500 to-orange-500 hover:from-purple-600 hover:via-pink-600 hover:to-orange-600 rounded-full flex items-center justify-center transition-all hover:scale-110 shadow-lg"
@@ -132,7 +132,7 @@ export default function Footer() {
 
               {/* LinkedIn */}
               <a
-                href="https://linkedin.com/in/"
+                href="https://www.linkedin.com/in/abdoulaye-patawala-84b138381/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-12 h-12 bg-blue-700 hover:bg-blue-800 rounded-full flex items-center justify-center transition-all hover:scale-110 shadow-lg"
