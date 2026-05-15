@@ -67,7 +67,7 @@ export default function AboutMe() {
             {/* Nom et accroche */}
             <div className="text-center lg:text-left">
               <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-1 md:mb-2">
-                [Ton prénom]
+                Abdoulaye Patawala
               </h3>
               <p className="text-red-600 font-semibold text-sm md:text-lg">
                 Expert en sites web pour restaurants • 3 ans d'expérience
@@ -90,7 +90,7 @@ export default function AboutMe() {
 
               {/* Présentation percutante */}
               <p className="font-medium">
-                Je m'appelle [Ton prénom]. Depuis 3 ans,{" "}
+                Je m'appelle [Abdoulaye Patawala]. Depuis 3 ans,{" "}
                 <span className="font-bold text-red-600">
                   j'ai aidé plus de 40 restaurants à remplir leurs tables chaque soir
                 </span>{" "}

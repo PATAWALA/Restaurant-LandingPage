@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import AboutMe from "@/components/AboutMe";
 import Problems from "@/components/Problems";
+import RestaurantExamples from "@/components/RestaurantExamples";
 import Comparison from "@/components/Comparison";
 import Benefits from "@/components/Benefits";
 import Opportunities from "@/components/Opportunities";
@@ -21,6 +22,7 @@ export default function Home() {
         <Benefits />
         <Opportunities />
         <Testimonials />
+        <RestaurantExamples />
         <FinalCTA />
       </main>
       <Footer />
