@@ -10,7 +10,8 @@ export default function Home() {
   return (
     <div className="bg-gray-50">
       {/* ==================== NAVBAR ==================== */}
-      <nav className="fixed top-0 left-0 right-0 w-full bg-white/95 backdrop-blur-md z-50 shadow-sm">
+            {/* ==================== NAVBAR ==================== */}
+      <nav className="fixed top-0 left-0 right-0 w-full bg-white/95 backdrop-blur-md z-[100] shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16 md:h-20">
             {/* Logo */}
@@ -135,14 +136,10 @@ export default function Home() {
 
       <main>
         {/* ==================== HERO ==================== */}
+       {/* ==================== HERO ==================== */}
         <section className="pt-8 md:pt-12 pb-20 bg-gradient-to-br from-red-50 via-white to-orange-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <motion.div
-              className="max-w-4xl mx-auto text-center"
-              initial={{ opacity: 0, y: 40 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-            >
+            <div className="max-w-4xl mx-auto text-center">
               {/* Badge d'alerte */}
               <motion.div
                 className="inline-block bg-red-100 text-red-700 px-5 py-2.5 rounded-full text-sm font-bold mb-6 border border-red-200"
@@ -153,26 +150,46 @@ export default function Home() {
               </motion.div>
 
               {/* Titre principal */}
-              <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-gray-900 mb-6 leading-tight">
+              <motion.h1 
+                className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-gray-900 mb-6 leading-tight"
+                initial={{ opacity: 0, y: 40 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+              >
                 Chaque jour sans site de réservation,<br />
                 vous{" "}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-orange-500">
                   payez vos concurrents
                 </span>
-              </h1>
+              </motion.h1>
 
-              <p className="text-lg md:text-2xl text-gray-600 mb-6 max-w-3xl mx-auto leading-relaxed">
+              <motion.p 
+                className="text-lg md:text-2xl text-gray-600 mb-6 max-w-3xl mx-auto leading-relaxed"
+                initial={{ opacity: 0, y: 40 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.1 }}
+              >
                 Vos tables devraient être pleines ce soir. Au lieu de ça, elles restent vides parce que
                 vos clients ne vous trouvent même pas en ligne.
-              </p>
+              </motion.p>
 
-              <p className="text-base md:text-lg text-gray-500 mb-10 max-w-2xl mx-auto italic">
+              <motion.p 
+                className="text-base md:text-lg text-gray-500 mb-10 max-w-2xl mx-auto italic"
+                initial={{ opacity: 0, y: 40 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+              >
                 Et le pire ? <span className="font-bold text-red-600">Vous ne le savez même pas.</span>{" "}
                 Chaque client qui va ailleurs est de l'argent que vous offrez gratuitement au restaurant d'à côté.
-              </p>
+              </motion.p>
 
               {/* Boutons */}
-              <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
+              <motion.div 
+                className="flex flex-col sm:flex-row gap-4 justify-center mb-16"
+                initial={{ opacity: 0, y: 40 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.3 }}
+              >
                 <a
                   href="#opportunities"
                   className="inline-flex items-center justify-center bg-gradient-to-r from-red-600 to-orange-500 text-white px-8 py-4 rounded-full font-bold text-lg hover:scale-105 transition-transform shadow-lg shadow-red-200"
@@ -185,7 +202,7 @@ export default function Home() {
                 >
                   <span className="mr-2 text-xl">👨‍🍳</span> Qui suis-je ?
                 </a>
-              </div>
+              </motion.div>
 
               {/* Stats choc */}
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -231,7 +248,7 @@ export default function Home() {
               >
                 La question n'est pas "combien ça coûte". La question c'est "combien ça vous coûte de ne rien faire".
               </motion.p>
-            </motion.div>
+            </div>
           </div>
         </section>
 
@@ -504,7 +521,9 @@ export default function Home() {
         </section>
 
         {/* ==================== COMPARISON ==================== */}
-        <section className="py-24 bg-gradient-to-br from-gray-100 to-red-50">
+        
+        {/* ==================== COMPARISON ==================== */}
+        <section className="py-24 bg-gradient-to-br from-gray-100 to-red-50 relative z-0">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <motion.div
               className="text-center mb-16"
@@ -530,7 +549,7 @@ export default function Home() {
                 initial={{ opacity: 0, x: -50 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
-                className="bg-white rounded-2xl shadow-xl overflow-hidden border-2 border-red-200"
+                className="bg-white rounded-2xl shadow-xl overflow-hidden border-2 border-red-200 relative z-0"
               >
                 <div className="bg-red-500 text-white text-center py-5 font-bold text-lg">
                   ❌ Votre restaurant AUJOURD'HUI
@@ -578,12 +597,12 @@ export default function Home() {
                 </div>
               </motion.div>
 
-              {/* Avec site */}
+              {/* Avec site - SANS scale-105 pour éviter le conflit de z-index */}
               <motion.div
                 initial={{ opacity: 0, x: 50 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
-                className="bg-white rounded-2xl shadow-xl overflow-hidden border-2 border-green-200 transform lg:scale-105"
+                className="bg-white rounded-2xl shadow-xl overflow-hidden border-2 border-green-200 relative z-0"
               >
                 <div className="bg-gradient-to-r from-red-600 to-orange-500 text-white text-center py-5 font-bold text-lg">
                   ✅ Votre restaurant DANS 2 SEMAINES
@@ -637,7 +656,7 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="mt-12 max-w-3xl mx-auto text-center"
+              className="mt-12 max-w-3xl mx-auto text-center relative z-0"
             >
               <p className="text-lg text-gray-600 italic">
                 La seule différence entre la colonne de gauche et celle de droite ?{" "}
