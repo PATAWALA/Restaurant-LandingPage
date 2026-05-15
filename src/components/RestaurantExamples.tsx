@@ -7,7 +7,7 @@ export default function RestaurantExamples() {
   const restaurants = [
     {
       name: "Le Bistrot Gourmand",
-      url: "https://www.lecabanondakar.org",
+      url: "https://chezchiro.com",
       description: "Menu digital, réservation en ligne, et photos qui donnent faim",
       features: ["Réservation 24/7", "Menu avec photos", "Avis Google", "WhatsApp intégré"],
       icon: "🍽️",
@@ -31,7 +31,7 @@ export default function RestaurantExamples() {
     },
     {
       name: "Chez Mama Bénin",
-      url: "https://chezchiro.com",
+      url: "https://www.lecabanondakar.org",
       description: "Site chaleureux avec présentation des spécialités, horaires et galerie",
       features: ["Spécialités du jour", "Horaires visibles", "Galerie photos", "Contact facile"],
       icon: "🍛",
