@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import config from "@/data/config";
 
 export default function Hero() {
   return (
