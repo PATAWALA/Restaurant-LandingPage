@@ -341,8 +341,8 @@ function Problems() {
   const problems = [
     { 
       icon: "👻", 
-      title: "Vous n&apos;apparaissez pas sur Google", 
-      situation: "Quand un client tape &ldquo;restaurant [votre ville]&rdquo;, il trouve vos concurrents qui ont un site web. Pas vous.",
+      title: "Vous n'apparaissez pas sur Google", 
+      situation: 'Quand un client tape "restaurant [votre ville]", il trouve vos concurrents qui ont un site web. Pas vous.',
       consequence: "Ce client ne saura jamais que votre cuisine existe. Il mangera ailleurs." 
     },
     { 
@@ -355,25 +355,25 @@ function Problems() {
       icon: "💸", 
       title: "Des tables qui restent vides", 
       situation: "Sans réservation en ligne, vos tables ne se remplissent pas toutes seules. Chaque table vide est un manque à gagner.",
-      consequence: "Un restaurant qui n&apos;est pas visible en ligne reçoit moins de réservations. C&apos;est mathématique." 
+      consequence: "Un restaurant qui n'est pas visible en ligne reçoit moins de réservations. C'est mathématique." 
     },
     { 
       icon: "🍽️", 
       title: "Votre menu est invisible", 
-      situation: "Aujourd&apos;hui, un client veut voir vos plats AVANT de réserver. Pas de photos en ligne ? Il passe au suivant.",
-      consequence: "Ce qui n&apos;est pas montré n&apos;existe pas pour le client." 
+      situation: "Aujourd'hui, un client veut voir vos plats AVANT de réserver. Pas de photos en ligne ? Il passe au suivant.",
+      consequence: "Ce qui n'est pas montré n'existe pas pour le client." 
     },
     { 
       icon: "⭐", 
-      title: "Peu d&apos;avis, peu de confiance", 
+      title: "Peu d'avis, peu de confiance", 
       situation: "89% des clients lisent les avis avant de choisir un restaurant. Sans présence en ligne, difficile de collecter des avis.",
-      consequence: "Moins d&apos;avis visibles = moins de confiance = moins de réservations." 
+      consequence: "Moins d'avis visibles = moins de confiance = moins de réservations." 
     },
     { 
       icon: "🏃", 
       title: "Les clients vont chez les concurrents", 
-      situation: "Vos concurrents ont un site web avec menu, photos, réservation en ligne. Pas vous. Le client choisit ce qu&apos;il voit.",
-      consequence: "Ce n&apos;est pas que votre cuisine est moins bonne. C&apos;est qu&apos;elle est moins visible." 
+      situation: "Vos concurrents ont un site web avec menu, photos, réservation en ligne. Pas vous. Le client choisit ce qu'il voit.",
+      consequence: "Ce n'est pas que votre cuisine est moins bonne. C'est qu'elle est moins visible." 
     },
   ];
 
@@ -531,15 +531,43 @@ function Comparison() {
 
 // ==================== BENEFITS ====================
 function Benefits() {
-  const benefits = [
-    { icon: "👁️", title: "Visible sur Google en 1ère page", desc: "Quand quelqu&apos;un tape &ldquo;restaurant [votre ville]&rdquo;, c&apos;est VOUS qui apparaissez en premier. Vos clients vous trouvent facilement." },
-    { icon: "📅", title: "Réservations 24h/24 sans effort", desc: "Les clients réservent à 23h, pendant que vous dormez. Vous vous réveillez avec des tables remplies." },
-    { icon: "🍽️", title: "Menu digital qui donne envie", desc: "Photos professionnelles de vos plats. Descriptions qui mettent l&apos;eau à la bouche. Les clients réservent avant d&apos;avoir fini de regarder." },
-    { icon: "⭐", title: "Avis Google qui rassurent", desc: "Quand un nouveau client hésite, il voit vos avis et les commentaires. Sa décision est prise en quelques secondes." },
-    { icon: "📱", title: "100% optimisé pour téléphone", desc: "80% de vos clients réservent depuis leur smartphone. Votre site est parfait sur tous les écrans." },
-    { icon: "🗺️", title: "Google Maps qui vous envoie des clients", desc: "Horaires, menu, photos, bouton &ldquo;Itinéraire&rdquo; : tout est là. Le touriste qui passe vous trouve." },
-    { icon: "💬", title: "WhatsApp intégré", desc: "Un client veut une table pour 10 personnes ? Il vous écrit directement via le bouton WhatsApp sur votre site." },
-    { icon: "📊", title: "Vous voyez ce qui marche", desc: "Combien de visiteurs ? Combien de réservations ? Quel plat attire le plus ? Vous pilotez avec des chiffres." },
+  const problems = [
+    { 
+      icon: "👻", 
+      title: "Vous n'apparaissez pas sur Google", 
+      situation: 'Quand un client tape "restaurant [votre ville]", il trouve vos concurrents qui ont un site web. Pas vous.',
+      consequence: "Ce client ne saura jamais que votre cuisine existe. Il mangera ailleurs." 
+    },
+    { 
+      icon: "📞", 
+      title: "Le téléphone interrompt votre service", 
+      situation: "Vous êtes en cuisine, le téléphone sonne. Vous devez répondre, expliquer le menu, noter la réservation.",
+      consequence: "Le temps passé au téléphone est du temps perdu pour la cuisine. Vos plats refroidissent." 
+    },
+    { 
+      icon: "💸", 
+      title: "Des tables qui restent vides", 
+      situation: "Sans réservation en ligne, vos tables ne se remplissent pas toutes seules. Chaque table vide est un manque à gagner.",
+      consequence: "Un restaurant qui n'est pas visible en ligne reçoit moins de réservations. C'est mathématique." 
+    },
+    { 
+      icon: "🍽️", 
+      title: "Votre menu est invisible", 
+      situation: "Aujourd'hui, un client veut voir vos plats AVANT de réserver. Pas de photos en ligne ? Il passe au suivant.",
+      consequence: "Ce qui n'est pas montré n'existe pas pour le client." 
+    },
+    { 
+      icon: "⭐", 
+      title: "Peu d'avis, peu de confiance", 
+      situation: "89% des clients lisent les avis avant de choisir un restaurant. Sans présence en ligne, difficile de collecter des avis.",
+      consequence: "Moins d'avis visibles = moins de confiance = moins de réservations." 
+    },
+    { 
+      icon: "🏃", 
+      title: "Les clients vont chez les concurrents", 
+      situation: "Vos concurrents ont un site web avec menu, photos, réservation en ligne. Pas vous. Le client choisit ce qu'il voit.",
+      consequence: "Ce n'est pas que votre cuisine est moins bonne. C'est qu'elle est moins visible." 
+    },
   ];
 
   return (
@@ -709,21 +737,21 @@ function Testimonials() {
       name: "Karim Benali",
       restaurant: "Le Saveur du Maroc",
       city: "Casablanca",
-      text: "Avant, je passais mes soirées au téléphone à prendre des réservations. Maintenant, tout se fait en ligne, même quand je dors. J&apos;ai gagné un temps fou et ma salle est pleine tous les soirs.",
+      text: "Avant, je passais mes soirées au téléphone à prendre des réservations. Maintenant, tout se fait en ligne, même quand je dors. J'ai gagné un temps fou et ma salle est pleine tous les soirs.",
       result: "+60% de réservations",
     },
     {
       name: "Sophie Dubois",
       restaurant: "La Brasserie Parisienne",
       city: "Paris",
-      text: "Mon menu en ligne avec des photos professionnelles a tout changé. Les clients me disent qu&apos;ils ont réservé après avoir vu mes plats. Ça donne tellement plus envie qu&apos;un PDF.",
+      text: "Mon menu en ligne avec des photos professionnelles a tout changé. Les clients me disent qu'ils ont réservé après avoir vu mes plats. Ça donne tellement plus envie qu'un PDF.",
       result: "Tables pleines à 95%",
     },
     {
       name: "Mohammed El Amrani",
       restaurant: "Riad Restaurant",
       city: "Marrakech",
-      text: "Les touristes réservent avant même d&apos;arriver au Maroc. Avant, je dépendais des passages dans la rue. Maintenant, j&apos;ai des réservations garanties avant l&apos;ouverture des vacances.",
+      text: "Les touristes réservent avant même d'arriver au Maroc. Avant, je dépendais des passages dans la rue. Maintenant, j'ai des réservations garanties avant l'ouverture des vacances.",
       result: "Note Google de 4.9/5",
     },
   ];
