@@ -79,7 +79,7 @@ function Hero() {
             animate={{ scale: [1, 1.03, 1] }}
             transition={{ repeat: Infinity, duration: 3 }}
           >
-            🎁 Cette analyse faite par Abdoulaye Patawala est pour votre restaurant. Veuillez lire attentivement.
+            🎁 Cette page préparée par Abdoulaye Patawala est pour votre restaurant. Prenez le temps de lire.
           </motion.div>
 
           {/* Titre principal */}
