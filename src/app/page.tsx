@@ -817,8 +817,8 @@ function Testimonials() {
 // ==================== RESTAURANT EXAMPLES ====================
 function RestaurantExamples() {
   const restaurants = [
-    { name: "Le Bistrot Gourmand", url: "https://chezchiro.com", description: "Menu digital, réservation en ligne, et photos qui donnent faim", features: ["Réservation 24/7", "Menu avec photos", "Avis Google", "WhatsApp intégré"], icon: "🍽️", color: "from-red-400 to-orange-400" },
-    { name: "Saveurs d'Afrique", url: "https://www.resto-plusci.com/", description: "Site complet avec tous les plats, prix et disponibilités en temps réel", features: ["Carte interactive", "Commandes en ligne", "Google Maps", "Fidélité clients"], icon: "🥘", color: "from-yellow-400 to-orange-500" },
+    { name: "Le Bistrot Gourmand", url: "https://restaurantflavory.com/", description: "Menu digital, réservation en ligne, et photos qui donnent faim", features: ["Réservation 24/7", "Menu avec photos", "Avis Google", "WhatsApp intégré"], icon: "🍽️", color: "from-red-400 to-orange-400" },
+    { name: "Saveurs d'Afrique", url: "https://akadi.ci", description: "Site complet avec tous les plats, prix et disponibilités en temps réel", features: ["Carte interactive", "Commandes en ligne", "Google Maps", "Fidélité clients"], icon: "🥘", color: "from-yellow-400 to-orange-500" },
     { name: "La Terrasse du Port", url: "https://bantourestaurant.com/", description: "Design moderne qui reflète l'ambiance unique du restaurant", features: ["Design premium", "Réservation en 3 clics", "Photos pro", "Événements privés"], icon: "🦞", color: "from-blue-500 to-green-500" },
     { name: "Chez Mama Bénin", url: "https://www.lecabanondakar.org", description: "Site chaleureux avec présentation des spécialités, horaires et galerie", features: ["Spécialités du jour", "Horaires visibles", "Galerie photos", "Contact facile"], icon: "🍛", color: "from-green-400 to-emerald-500" },
   ];
