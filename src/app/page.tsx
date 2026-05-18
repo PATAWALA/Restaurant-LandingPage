@@ -529,41 +529,48 @@ function Comparison() {
   );
 }
 
-"use client";
-
-import { motion } from "framer-motion";
-
-export default function Benefits() {
+// ==================== BENEFITS ====================
+function Benefits() {
   const benefits = [
     { 
-      icon: "👻", 
-      title: "Vous n'apparaissez pas sur Google", 
-      desc: "Quand un client tape \"restaurant [votre ville]\", il trouve vos concurrents qui ont un site web. Pas vous. Ce client ne saura jamais que votre cuisine existe. Il mangera ailleurs."
+      icon: "🔍", 
+      title: "Visible sur Google 24h/24", 
+      desc: "Quand un client tape \"restaurant [votre ville]\", c'est VOUS qui apparaissez. Il trouve votre menu, vos photos, et il réserve en un clic. Fini le fantôme."
     },
     { 
-      icon: "📞", 
-      title: "Le téléphone interrompt votre service", 
-      desc: "Vous êtes en cuisine, le téléphone sonne. Vous devez répondre, expliquer le menu, noter la réservation. Le temps passé au téléphone est du temps perdu pour la cuisine. Vos plats refroidissent."
-    },
-    { 
-      icon: "💸", 
-      title: "Des tables qui restent vides", 
-      desc: "Sans réservation en ligne, vos tables ne se remplissent pas toutes seules. Chaque table vide est un manque à gagner. Un restaurant qui n'est pas visible en ligne reçoit moins de réservations. C'est mathématique."
+      icon: "📅", 
+      title: "Réservations automatiques", 
+      desc: "Les clients réservent en ligne, jour et nuit, même quand vous dormez. Vous recevez une notification, votre table est vendue. Zéro coup de fil pendant le service."
     },
     { 
       icon: "🍽️", 
-      title: "Votre menu est invisible", 
-      desc: "Aujourd'hui, un client veut voir vos plats AVANT de réserver. Pas de photos en ligne ? Il passe au suivant. Ce qui n'est pas montré n'existe pas pour le client."
+      title: "Menu digital alléchant", 
+      desc: "Photos professionnelles de vos plats, descriptions qui donnent faim. Les clients réservent avant même d'avoir fini de regarder votre carte."
     },
     { 
       icon: "⭐", 
-      title: "Peu d'avis, peu de confiance", 
-      desc: "89% des clients lisent les avis avant de choisir un restaurant. Sans présence en ligne, difficile de collecter des avis. Moins d'avis visibles = moins de confiance = moins de réservations."
+      title: "Avis Google qui rassurent", 
+      desc: "Vos clients laissent des avis, votre note grimpe. Les nouveaux clients voient 4.8 étoiles et réservent en confiance. La preuve sociale fait tout."
     },
     { 
-      icon: "🏃", 
-      title: "Les clients vont chez les concurrents", 
-      desc: "Vos concurrents ont un site web avec menu, photos, réservation en ligne. Pas vous. Le client choisit ce qu'il voit. Ce n'est pas que votre cuisine est moins bonne. C'est qu'elle est moins visible."
+      icon: "📱", 
+      title: "100% optimisé mobile", 
+      desc: "70% des clients réservent sur téléphone. Votre site est parfait sur tous les écrans. Zéro friction, zéro abandon."
+    },
+    { 
+      icon: "🗺️", 
+      title: "Google Maps optimisé", 
+      desc: "Horaires, menu, photos, bouton itinéraire. Le touriste qui passe dans votre rue vous trouve et réserve en 30 secondes."
+    },
+    { 
+      icon: "💬", 
+      title: "WhatsApp intégré", 
+      desc: "Un client veut une table pour 10 ce soir ? Il vous écrit directement. Vous répondez en 30 secondes. Table vendue."
+    },
+    { 
+      icon: "📊", 
+      title: "Statistiques claires", 
+      desc: "Combien de visiteurs ? Combien de réservations ? Vous pilotez votre restaurant avec des vrais chiffres, pas à l'aveugle."
     },
   ];
 
