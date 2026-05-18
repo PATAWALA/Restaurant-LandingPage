@@ -529,44 +529,41 @@ function Comparison() {
   );
 }
 
-// ==================== BENEFITS ====================
-function Benefits() {
-  const problems = [
+"use client";
+
+import { motion } from "framer-motion";
+
+export default function Benefits() {
+  const benefits = [
     { 
       icon: "👻", 
       title: "Vous n'apparaissez pas sur Google", 
-      situation: 'Quand un client tape "restaurant [votre ville]", il trouve vos concurrents qui ont un site web. Pas vous.',
-      consequence: "Ce client ne saura jamais que votre cuisine existe. Il mangera ailleurs." 
+      desc: "Quand un client tape \"restaurant [votre ville]\", il trouve vos concurrents qui ont un site web. Pas vous. Ce client ne saura jamais que votre cuisine existe. Il mangera ailleurs."
     },
     { 
       icon: "📞", 
       title: "Le téléphone interrompt votre service", 
-      situation: "Vous êtes en cuisine, le téléphone sonne. Vous devez répondre, expliquer le menu, noter la réservation.",
-      consequence: "Le temps passé au téléphone est du temps perdu pour la cuisine. Vos plats refroidissent." 
+      desc: "Vous êtes en cuisine, le téléphone sonne. Vous devez répondre, expliquer le menu, noter la réservation. Le temps passé au téléphone est du temps perdu pour la cuisine. Vos plats refroidissent."
     },
     { 
       icon: "💸", 
       title: "Des tables qui restent vides", 
-      situation: "Sans réservation en ligne, vos tables ne se remplissent pas toutes seules. Chaque table vide est un manque à gagner.",
-      consequence: "Un restaurant qui n'est pas visible en ligne reçoit moins de réservations. C'est mathématique." 
+      desc: "Sans réservation en ligne, vos tables ne se remplissent pas toutes seules. Chaque table vide est un manque à gagner. Un restaurant qui n'est pas visible en ligne reçoit moins de réservations. C'est mathématique."
     },
     { 
       icon: "🍽️", 
       title: "Votre menu est invisible", 
-      situation: "Aujourd'hui, un client veut voir vos plats AVANT de réserver. Pas de photos en ligne ? Il passe au suivant.",
-      consequence: "Ce qui n'est pas montré n'existe pas pour le client." 
+      desc: "Aujourd'hui, un client veut voir vos plats AVANT de réserver. Pas de photos en ligne ? Il passe au suivant. Ce qui n'est pas montré n'existe pas pour le client."
     },
     { 
       icon: "⭐", 
       title: "Peu d'avis, peu de confiance", 
-      situation: "89% des clients lisent les avis avant de choisir un restaurant. Sans présence en ligne, difficile de collecter des avis.",
-      consequence: "Moins d'avis visibles = moins de confiance = moins de réservations." 
+      desc: "89% des clients lisent les avis avant de choisir un restaurant. Sans présence en ligne, difficile de collecter des avis. Moins d'avis visibles = moins de confiance = moins de réservations."
     },
     { 
       icon: "🏃", 
       title: "Les clients vont chez les concurrents", 
-      situation: "Vos concurrents ont un site web avec menu, photos, réservation en ligne. Pas vous. Le client choisit ce qu'il voit.",
-      consequence: "Ce n'est pas que votre cuisine est moins bonne. C'est qu'elle est moins visible." 
+      desc: "Vos concurrents ont un site web avec menu, photos, réservation en ligne. Pas vous. Le client choisit ce qu'il voit. Ce n'est pas que votre cuisine est moins bonne. C'est qu'elle est moins visible."
     },
   ];
 
